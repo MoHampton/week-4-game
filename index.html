@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+		<link rel="stylesheet" type='text/css' href="assets/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css" rel="stylesheet">
+	</head>
+	
+	<body>
+<!--		Navbar with my name and little knight icon because awesome    -->
+		<nav class="navbar navbar-default">
+		  <div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="https://github.com/mohampton" target="_blank"\> <span <img src="..assets/images/#Team.png"  aria-hidden="true"></span>Crystal Collector</a>
+			</div>
+		  </div>
+		</nav>
+
+		<div class="container">
+			<div class="row">
+<!--		Information panel with instructions   -->
+                <div class="panel panel-default col-md-4">
+				  <div class="panel-body">
+					<h1></h1>
+					<p>
+					  You will be given a random number at the start of the game.
+                      <br><br>
+                      There are four crystals. Each crystal is randomly assigned a value. 
+                      <br><br>
+                      You win the game by matching your total score to the random number.If you go over, you lose!
+                      <br><br>
+                      A new value will be assigned with each game.  Good Luck!
+					</p>
+				  </div>
+				</div>
+<!--                Divider hack        -->
+                <div class="col-md-2"></div>
+<!--                Main game window      -->
+                <div class="jumbotron col-md-6">
+<!--                    Target number panel     -->
+                    <div class="panel panel-default col-md-6">
+                        <div class="panel-heading text-center">Target Number</div>
+                            <div class="panel-body">
+                                <span id="numberTarget"></span>
+                            </div>
+                        </div>
+<!--                    Your score panel        -->
+                    <div class="panel panel-default col-md-6">
+                        <div class="panel-heading text-center">Your Score</div>
+                          <div class="panel-body">
+                            <span id="yourScore"></span>
+                          </div>
+                        </div>
+<!--                    Crystal button panel        -->
+                    <div class="panel panel-default text-center">
+                        <div id="crystals" class="panel-body">
+                        </div>
+                    </div>
+<!--                    Status panel        -->
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <p>Status: <span id="status"></span></p>
+                            <p>Wins: <span id="win"></span></p>
+                            <p>Losses: <span id="loss"></span></p>
+                        </div>
+                    </div>
+                    
+                </div>
+			 </div>
+        </div>
+            
+<!--		Scripts       -->
+		<script src="https://code.jquery.com/jquery-3.2.1.js"
+          integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+          crossorigin="anonymous"></script>
+		<script src="assets/game.js"></script>
+	</body>
+	
+</html>
