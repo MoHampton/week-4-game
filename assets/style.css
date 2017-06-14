@@ -1,9 +1,6 @@
 body {
-	background-image: url("../images/background.png");
-	background-repeat: no-repeat;
-	z-index: -1;
-	height: 100%;
-	width: 100%;
+	background-image: url("images/background2.png");
+
 }
 
 .panel {
@@ -14,6 +11,10 @@ p {
 	font-size: 32px;
 }
 
+h4 {
+	color:aquamarine;
+}
+
 h1 {
 	font-size: 60px;
 	color: aquamarine;
@@ -21,6 +22,7 @@ h1 {
 }
 .navbar {
     padding-bottom: 15px;
+    color: aquamarine;
 }
 .navbar-brand {
 	font-family: 'Helvetica', sans-serif;

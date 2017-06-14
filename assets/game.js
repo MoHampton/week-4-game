@@ -5,7 +5,7 @@ $(document).ready(function() {
 	var wins = 0;
 	var losses = 0;
 	
- //Images Array
+ //Crystals Array
 	var crystals = ['assets/images/crystal1.png','assets/images/crystal2.png','assets/images/crystal3.png','assets/images/crystal4.png'];
 	
     //Update status text in <span>
@@ -56,8 +56,7 @@ $(document).ready(function() {
 	
 	function createCrystals () {
 		var numbers = []
-            //  Had to use a while loop to create an array of random numbers to assign to 
-            //  each crystal. This was a major struggle btw. 
+            //  Found how to use a while loop to create to assign to each crystal from a fellow GitHub user. Would have never figured this out left to my own devices.
             
 			while(numbers.length < 4){
 			  var randomnumber = Math.floor(Math.random()*(12-2)+2);
